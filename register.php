@@ -69,13 +69,23 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-
+   <style>
+   .bg{
+   background-image: url(assets/1.PNG) !important;
+   
+   background-size:cover;
+   background-position: left;
+   background-repeat: no-repeat;
+}
+.fc{
+   margin-left:-20%;
+}
+</style>
 </head>
-<body>
+<body class='bg' >
 
-<?php include 'components/user_header.php'; ?>
 
-<section class="form-container">
+<section class="form-container fc">
 
    <form class="register" action="" method="post" enctype="multipart/form-data">
       <h3>create account</h3>
@@ -112,7 +122,6 @@ if(isset($_POST['submit'])){
 
 
 
-<?php include 'components/footer.php'; ?>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
