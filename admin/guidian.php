@@ -1,8 +1,7 @@
 
 
 
-<?php include '../components/headerm.php';
-?>
+<?php include '../components/headerm.php'; ?>
 <?php
 
 include '../components/connect.php';
@@ -18,35 +17,29 @@ if(isset($_POST['id_to_delete'])){
    $sql1 = "DELETE FROM contact WHERE id = '$id' ";
    $res1 = mysqli_query($conn,$sql1) or die("Error deleting contacts ".mysqli_error($conn));
    if($res1){
-      echo "MESSAGE DELETED";
+      echo "guidian info DELETED !!!";
    }else{
       echo "Error fetching contacts!!!!";
 
    }
 }
 
-$sql = "SELECT * FROM contact";
+$sql = "SELECT * FROM users";
 $res = mysqli_query($conn,$sql ) or die("Error fetching contacts ".mysqli_error($conn));
 
 while($row = mysqli_fetch_array($res)){
-   $number = $row['number'];
    $name = $row['name'];
-   $email = $row['email'];
-   $message = $row['message'];
-
-
-
-   
-  
+   $pnum = $row['pnum'];
+   $unum = $row['unum'];
    ?>
+ 
 
-  
    <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>messages</title>
+   <title>Parents/guidians numbers</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -68,20 +61,15 @@ p{
 <body style="padding-left: 0;">
 <section class="comments">
 
-   <h1 class="heading">message--</h1>
+   <h1 class="heading">Parents/guidians numbers--</h1>
 
    <div class="show-comments bg">
    <div class="box" style="">
          <div class="content"><span></span><p> - - </p></div>
-         <p class="text"><?php echo $number?></p>
-         <p class="text"><?php echo $name?></p>
-         <p class="text"><?php echo $email?></p>
-         <p class="text"><?php echo $message?></p>
-
-   <form action="" method="POST">
-            <input type="hidden" name="id_to_delete" value="">
-            <button type="submit"  name="delete"  class="inline-delete-btn" onclick="return confirm('delete this message?');">delete message</button>
-         </form>
+         <p class="text">students name:_<?php echo $name?></p>
+         <p class="text">students guidian number:_<?php echo $pnum?></p>
+         <p class="text">students number:_<?php echo $unum?></p>
+   
       </div>
 
 
@@ -89,6 +77,8 @@ p{
       </div>
    
    </section>
+
+   
  <?php
 
 

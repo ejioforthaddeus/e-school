@@ -87,12 +87,13 @@ $total_contact = $select_contact->rowCount();
          <p>total comments</p>
          <a href="comments" class="btn">view comments</a>
       </div>
-      <div class="box">
-         <h3><?= $total_contact; ?></h3>
-         <p>total messages</p>
-         <a href="contact" class="btn">view messages</a>
-      </div>
-
+    
+      <div class="box offer">
+   <h3>Add admin/teacher</h3>
+   <p>add as many admins or teacher here !</p>
+   <a href="register" class="inline-btn">get started</a>
+</div>
+   
       <div class="box">
          <h3>quick select</h3>
          <p>login or register</p>
@@ -102,13 +103,8 @@ $total_contact = $select_contact->rowCount();
          </div>
       </div>
       <div class="box-container">
+      </div>
 
-<div class="box offer">
-   <h3>ADD Admin/teacher</h3>
-   <p>add as many admins or teacher here !</p>
-   <a href="register" class="inline-btn">get started</a>
-</div>
-   </div>
 
 </section>
 

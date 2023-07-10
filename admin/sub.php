@@ -1,6 +1,7 @@
 <?php
-session_start();
+
 include '../components/connect.php';
+
 if(isset($_POST['submit'])){
 
    $email = $_POST['email'];
@@ -14,7 +15,7 @@ if(isset($_POST['submit'])){
    
    if($select_tutor->rowCount() > 0){
      setcookie('tutor_id', $row['id'], time() + 60*60*24*30, '/');
-     header('location:dashboard');
+     header('location:../admin/subscribers.php');
    }else{
       $message[] = 'incorrect email or password!';
    }
