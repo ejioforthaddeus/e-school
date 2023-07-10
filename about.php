@@ -27,7 +27,6 @@ if(isset($_COOKIE['user_id'])){
 </head>
 <body style="padding-left: 0;">
 
-<?php //include 'components/user_header.php'; ?>
 <?php include 'onedu/header.php'; ?>
 
 <!-- about section starts  -->

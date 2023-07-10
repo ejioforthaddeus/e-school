@@ -29,9 +29,13 @@ RewriteRule ^dashboard$   dashboard.php
 RewriteRule ^admin_logout$   admin_logout.php
 RewriteRule ^subscribers$   subscribers.php
 RewriteRule ^add_content$   add_content.php
+RewriteRule ^add_contents$   add_contents.php
 RewriteRule ^view_content$   view_content.php
 RewriteRule ^update_content$  update_content.php
 RewriteRule ^update_playlist$  update_playlist.php
 RewriteRule ^view_playlist$  view_playlist.php
 RewriteRule ^likes$  likes.php
-RewriteRule ^bookmark$  bookmark.php
+RewriteRule ^add_playlist$  add_playlist.php
+RewriteRule ^likes$  likes.php
+RewriteRule ^news$  news.php
+RewriteRule ^guidian$  guidian.php

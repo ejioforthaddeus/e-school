@@ -141,9 +141,9 @@ if(isset($_POST['update_now'])){
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body style="padding-left: 0;">
 
-<?php include 'components/user_header.php'; ?>
+<?php include 'onedu/header.php'; ?>
 
 <?php
    if(isset($_POST['edit_comment'])){

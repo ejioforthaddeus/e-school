@@ -13,6 +13,10 @@ if(isset($_POST['submit'])){
    $id = unique_id();
    $name = $_POST['name'];
    $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $unum = $_POST['unum'];
+   $unum = filter_var($unum, FILTER_SANITIZE_STRING);
+   $pnum = $_POST['pnum'];
+   $pnum = filter_var($pnum, FILTER_SANITIZE_STRING);
    $email = $_POST['email'];
    $email = filter_var($email, FILTER_SANITIZE_STRING);
    $pass = sha1($_POST['pass']);
@@ -37,8 +41,8 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $message[] = 'confirm passowrd not matched!';
       }else{
-         $insert_user = $conn->prepare("INSERT INTO `users`(id, name, email, password, image) VALUES(?,?,?,?,?)");
-         $insert_user->execute([$id, $name, $email, $cpass, $rename]);
+         $insert_user = $conn->prepare("INSERT INTO `users`(id, name,unum,pnum, email, password, image) VALUES(?,?,?,?,?,?,?)");
+         $insert_user->execute([$id, $name,$unum,$pnum, $email, $cpass, $rename]);
          move_uploaded_file($image_tmp_name, $image_folder);
          
          $verify_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ? LIMIT 1");
@@ -47,7 +51,7 @@ if(isset($_POST['submit'])){
          
          if($verify_user->rowCount() > 0){
             setcookie('user_id', $row['id'], time() + 60*60*24*30, '/');
-            header('location:home.php');
+            header('location:login.php');
          }
       }
    }
@@ -93,10 +97,14 @@ if(isset($_POST['submit'])){
          <div class="col">
             <p>your name <span>*</span></p>
             <input type="text" name="name" placeholder="eneter your name" maxlength="50" required class="box">
+            <p>your number <span>*</span></p>
+            <input type="number" name="unum" placeholder="eneter your number" maxlength="50" required class="box">
             <p>your email <span>*</span></p>
             <input type="email" name="email" placeholder="enter your email" maxlength="20" required class="box">
          </div>
          <div class="col">
+            <p>your guidian number <span>*</span></p>
+            <input type="number" name="pnum" placeholder="eneter  guidian/parent number" maxlength="50" required class="box">
             <p>your password <span>*</span></p>
             <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
             <p>confirm password <span>*</span></p>
