@@ -12,9 +12,9 @@ if(isset($_POST['submit'])){
 
    $id = unique_id();
    $name = $_POST['name'];
-   $name = filter_var($name,  FILTER_SANITIZE_STRING);
-   $email = $_POST['email'];  
-   $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+   $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $email = $_POST['email'];
+   $email = filter_var($email, FILTER_SANITIZE_STRING);
    $pass = sha1($_POST['pass']);
    $pass = filter_var($pass, FILTER_SANITIZE_STRING);
    $cpass = sha1($_POST['cpass']);
@@ -56,7 +56,6 @@ if(isset($_POST['submit'])){
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,23 +69,13 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-   <style>
-   .bg{
-   background-image: url(assets/1.PNG) !important;
-   
-   background-size:cover;
-   background-position: left;
-   background-repeat: no-repeat;
-}
-.fc{
-   margin-left:-20%;
-}
-</style>
+
 </head>
-<body class='bg' >
+<body>
 
+<?php include 'components/user_header.php'; ?>
 
-<section class="form-container fc">
+<section class="form-container">
 
    <form class="register" action="" method="post" enctype="multipart/form-data">
       <h3>create account</h3>
@@ -123,6 +112,7 @@ if(isset($_POST['submit'])){
 
 
 
+<?php include 'components/footer.php'; ?>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
