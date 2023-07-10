@@ -35,3 +35,4 @@ RewriteRule ^update_playlist$  update_playlist.php
 RewriteRule ^view_playlist$  view_playlist.php
 RewriteRule ^likes$  likes.php
 RewriteRule ^bookmark$  bookmark.php
+RewriteRule ^news$  news.php

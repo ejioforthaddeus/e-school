@@ -39,8 +39,9 @@ if(isset($message)){
       <form action="search_page.php" method="post" class="search-form">
          <input type="text" name="search" placeholder="search here..." required maxlength="100">
          <button type="submit" class="fas fa-search" name="search_btn"></button>
+       <h1><a href="../news">upload news/info</a></h1>  
       </form>
-
+  
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="search-btn" class="fas fa-search"></div>
@@ -48,7 +49,7 @@ if(isset($message)){
          <div id="toggle-btn" class="fas fa-sun"></div>
       </div>
 
-      <div class="profile">
+      <div class="profile"  style="z-index:10000 !important;">
          <?php
             $select_profile = $conn->prepare("SELECT * FROM `tutors` WHERE id = ?");
             $select_profile->execute([$tutor_id]);
@@ -104,6 +105,7 @@ if(isset($message)){
          <a href="profile" class="btn">view profile</a>
       <a href="subscribers"><i class="fas fa-book"></i><span>subscribers</a>
       <a href="contact"><i class="fas fa-comment"></i><span>messages</a>
+      <a href="guidian"><i class="fas fa-comment"></i><span>--message student/guidian</a>
          <?php
             }else{
          ?>
