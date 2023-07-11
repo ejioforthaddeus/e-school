@@ -59,12 +59,12 @@ p{
 <body style="padding-left: 0;">
 <section class="comments">
 
-   <h1 class="heading">Subscriber--</h1>
+   <h1 class="heading">SCHOOL ANNOUNCMENT!!--</h1>
 
    <div class="show-comments bg">
    <div class="box" style="">
          <div class="content"><span></span><p> - - </p></div>
-         <p class="text"><?php echo $name?></p>
+         <p class="text">ANNOUNCMENT BY--<?php echo $name?></p>
          <p class="text"><?php echo $mess?></p>
    <form action="" method="post">
             <input type="hidden" name="id_to_delete" value="<?= $fetch_contact['id']; ?>">

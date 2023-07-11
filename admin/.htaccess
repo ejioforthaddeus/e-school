@@ -37,5 +37,7 @@ RewriteRule ^view_playlist$  view_playlist.php
 RewriteRule ^likes$  likes.php
 RewriteRule ^add_playlist$  add_playlist.php
 RewriteRule ^likes$  likes.php
-RewriteRule ^addNews$  news.php
+RewriteRule ^stdnews$  news.php
 RewriteRule ^guidian$  guidian.php
+RewriteRule ^news$  stdnews.php
+RewriteRule ^addNews$  addNewsws.php
