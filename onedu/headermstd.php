@@ -48,11 +48,11 @@ $name ="EJI-ELEARN"
 <div class="main-menu d-none d-lg-block">
 <nav>
 <ul id="navigation">
-<li><a href="admin/dashboard">Home</a></li>
-<li><a href="admin/playlists">playlists</a></li>
-<li><a href="admin/contents">contents</a></li>
-<li><a href="admin/subscribers">subscribers</a></li>
-<li><a href="admin/contact">messages</a></li>
+<li><a href="home">Home</a></li>
+<li><a href="about">about us</a></li>
+<li><a href="courses">courses</a></li>
+<li><a href="subscribe">subscriber us</a></li>
+<li><a href="contact">messages us</a></li>
 
 <li>
 <a href="components/admin_logout" class="btn header-btn2">logout</a>
