@@ -622,7 +622,7 @@ techniques to engage effectively with vulnerable children and young people.</p>
 </div>
 
 <div class="slider-btns">
-<a data-animation="fadeInLeft" data-delay="1.0s" href="about.html" class="btn hero-btn mr-15">Become a Instructor</a>
+<a data-animation="fadeInLeft" data-delay="1.0s" href="login" class="btn hero-btn mr-15">Become a Instructor</a>
 <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn" href="https://www.youtube.com/">
 <img src="assets/img/icon/play-button.svg" alt="">
 Watch Video
