@@ -85,7 +85,7 @@ $name="EJI-ELEARN"
          <span>student</span>
          <a href="profile" class="btn">view profile</a>
       <a href="contact"><i class="fas fa-comment"></i><span>message us</a>
-      <a href="news"><i class="fas fa-comment"></i><span>news/annoucment</a>
+      <a href="stdnews.php"><i class="fas fa-comment"></i><span>news/annoucment</a>
          <?php
             }else{
          ?>

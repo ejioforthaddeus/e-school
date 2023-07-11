@@ -39,7 +39,7 @@ if(isset($message)){
       <form action="search_page.php" method="post" class="search-form">
          <input type="text" name="search" placeholder="search here..." required maxlength="100">
          <button type="submit" class="fas fa-search" name="search_btn"></button>
-       <h1><a href="../news">upload news/info</a></h1>  
+       <h1><a href="../addNews">upload news/info</a></h1>  
       </form>
   
       <div class="icons">
