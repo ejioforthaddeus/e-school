@@ -106,7 +106,19 @@ $name="EJI-ELEARN"
       <a href="teachers"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
       <a href="contact"><i class="fas fa-headset"></i><span>contact us</span></a>
    </nav>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/64ac97d194cf5d49dc62c332/1h51323kt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </div>
 
 <!-- side bar section ends -->
