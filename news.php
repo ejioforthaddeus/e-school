@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
          <img src="images/contact-img.svg" alt="">
       </div>
       <form action="" method="post">
-         <h3>SEND US MESSAGE</h3>
+         <h3>SEND ANNOUNCMENT</h3>
          <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
          <input type="text" placeholder="enter your message title" required maxlength="100" name="email" class="box">
          <textarea name="msg" class="box" placeholder="enter your message" required cols="30" rows="10" maxlength="1000"></textarea>
@@ -77,30 +77,7 @@ if(isset($_POST['submit'])){
 
    </div>
 
-   <div class="box-container">
-
-      <div class="box">
-         <i class="fas fa-youtube"></i>
-         <h3>phone number</h3>
-         <a href="tel:1234567890">123-456-7890</a>
-         <a href="tel:1112223333">111-222-3333</a>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-facebook"></i>
-         <h3>email address</h3>
-         <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.come</a>
-         <a href="mailto:anasbhai@gmail.com">anasbhai@gmail.come</a>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-instagram"></i>
-         <h3>office address</h3>
-         <a href="#">flat no. 1, a-1 building, jogeshwari, mumbai, india - 400104</a>
-      </div>
-
-
-   </div>
+   
 
 </section>
 
